@@ -27,7 +27,14 @@ class ChatIAPage extends StatelessWidget {
                 ],
               ),
             ),
-            Image.asset("/assets/chatGPT.png")
+            SizedBox(
+              height: 200,
+            ),
+            Image.asset(
+              "/assets/chatGPT.png",
+              width: 100,
+              height: 100,
+            )
           ],
         ),
       ),
