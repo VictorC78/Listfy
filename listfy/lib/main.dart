@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Homepage',
+      title: 'Meu App',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -47,7 +47,28 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Homepage'),
+        backgroundColor: Colors.black,
+        actions: [
+          Icon(
+            Icons.dark_mode_rounded,
+            size: 20,
+          ),
+          SizedBox(
+            width: 30,
+          ),
+          Icon(
+            Icons.watch_later_sharp,
+            size: 20,
+          ),
+          SizedBox(width: 30),
+          Icon(
+            Icons.settings,
+            size: 20,
+          ),
+          SizedBox(
+            width: 30,
+          )
+        ],
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -74,7 +95,7 @@ class _HomePageState extends State<HomePage> {
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey[400],
-        backgroundColor: const Color.fromARGB(255, 255, 0, 0),
+        backgroundColor: Colors.black, // Alterado para preto
         onTap: _onItemTapped,
       ),
     );
