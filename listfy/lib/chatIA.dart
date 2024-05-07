@@ -31,7 +31,7 @@ class ChatIAPage extends StatelessWidget {
               height: 200,
             ),
             Image.asset(
-              "/assets/chatGPT.png",
+              "assets/chatGPT.png",
               width: 100,
               height: 100,
             )
