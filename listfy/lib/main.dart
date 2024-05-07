@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Meu App',
+      title: 'Listfy',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.note),
+            icon: Icon(Icons.note_add_rounded),
             label: 'Notas',
           ),
           BottomNavigationBarItem(
@@ -95,7 +95,8 @@ class _HomePageState extends State<HomePage> {
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey[400],
-        backgroundColor: Colors.black, // Alterado para preto
+        backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed, // Fixed
         onTap: _onItemTapped,
       ),
     );
