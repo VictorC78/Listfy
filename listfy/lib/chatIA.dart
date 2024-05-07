@@ -26,7 +26,8 @@ class ChatIAPage extends StatelessWidget {
                           TextStyle(color: Color.fromARGB(255, 136, 136, 136)))
                 ],
               ),
-            )
+            ),
+            Image.asset("/assets/chatGPT.png")
           ],
         ),
       ),
