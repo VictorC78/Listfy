@@ -20,6 +20,9 @@ class ChatIAPage extends StatelessWidget {
                       style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 25)),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text(
                       "Utilize a inteligência artificial para agilizar seu trabalho. Exemplo: Crie uma pasta com uma lista de tarefas sobre arrumar a casa...",
                       style:
@@ -27,7 +30,15 @@ class ChatIAPage extends StatelessWidget {
                 ],
               ),
             ),
-            Image.asset("/assets/chatGPT.png")
+            SizedBox(
+              height: 200,
+            ),
+            Center(
+                child: Image.asset(
+              'images/chatGPT.png',
+              width: 100,
+              height: 100,
+            ))
           ],
         ),
       ),
