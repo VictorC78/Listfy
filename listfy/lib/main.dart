@@ -111,8 +111,8 @@ class _HomePageState extends State<HomePage> {
         type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
         selectedFontSize: 14.0, // Tamanho da fonte para itens selecionados
-        unselectedFontSize:
-            12.0, // Tamanho da fonte para itens não selecionados
+        unselectedFontSize: 12.0,
+        // Tamanho da fonte para itens não selecionados
       ),
     );
   }
