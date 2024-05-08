@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
             size: 20,
           ),
           SizedBox(
-            width: 30,
+            width: 0.055 * MediaQuery.of(context).size.width,
           )
         ],
       ),
@@ -76,28 +76,43 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.note_add_rounded),
+            icon: Padding(
+              padding: EdgeInsets.all(5.0),
+              child: Icon(Icons.note_add_rounded),
+            ),
             label: 'Notas',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.folder),
+            icon: Padding(
+              padding: EdgeInsets.all(5.0),
+              child: Icon(Icons.folder),
+            ),
             label: 'Pastas',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.assignment),
+            icon: Padding(
+              padding: EdgeInsets.all(5.0),
+              child: Icon(Icons.assignment),
+            ),
             label: 'Tarefas',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.chat),
-            label: 'ChatGPT',
+            icon: Padding(
+              padding: EdgeInsets.all(5.0),
+              child: Icon(Icons.data_usage),
+            ),
+            label: 'GPT',
           ),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey[400],
         backgroundColor: Colors.black,
-        type: BottomNavigationBarType.fixed, // Fixed
+        type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
+        selectedFontSize: 14.0, // Tamanho da fonte para itens selecionados
+        unselectedFontSize:
+            12.0, // Tamanho da fonte para itens não selecionados
       ),
     );
   }
