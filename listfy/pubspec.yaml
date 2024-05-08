@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter_native_splash: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
   flutter:
     sdk: flutter
 
@@ -37,6 +38,17 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^6.2.0
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/iconListfy.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/iconListfy.png"
+    background_color: "#000000"
+    theme_color: "#000000"
+
 flutter_native_splash:
   color: "#000000"
   image: "assets/ListFy.gif"
@@ -60,6 +72,8 @@ flutter:
   assets:
     - assets/chatGPT.png
     - assets/ListFy.gif
+    - assets/IconListFy.png
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
